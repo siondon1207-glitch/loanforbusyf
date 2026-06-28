@@ -1,23 +1,846 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "2026년 제조업정책자금 최신 비교 정보 및 전문 전략",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Article",
+          "url": "https://funding.reliabledone.com/manufacturing-fund",
+          "name": "제조업정책자금 성공률을 높이는 5가지 핵심 전략",
+          "datePublished": "2026-01-05T09:00:00+09:00",
+          "author": {
+            "@type": "Organization",
+            "name": "제조업정책자금 자가진단 통합 지원 센터"
+          },
+          "headline": "제조업정책자금 성공률을 높이는 5가지 핵심 전략"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Article",
+          "url": "https://funding.reliabledone.com/calculation",
+          "name": "정책자금 맞춤 한도와 이자율 모바일 계산 및 자동 비교",
+          "datePublished": "2026-01-10T10:30:00+09:00",
+          "author": {
+            "@type": "Organization",
+            "name": "제조업정책자금 자가진단 통합 지원 센터"
+          },
+          "headline": "정책자금 맞춤 한도와 이자율 모바일 계산 및 자동 비교"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Article",
+          "url": "https://funding.reliabledone.com/consulting-review",
+          "name": "전문 컨설팅 업체를 통한 내돈내산 정책자금 솔루션 실제 후기",
+          "datePublished": "2026-01-15T14:00:00+09:00",
+          "author": {
+            "@type": "Organization",
+            "name": "제조업정책자금 자가진단 통합 지원 센터"
+          },
+          "headline": "전문 컨설팅 업체를 통한 내돈내산 정책자금 솔루션 실제 후기"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* modern soft and warm aesthetic styling */
+    :root {
+      --bg-warm: #FAF6F0;
+      --card-bg: #FFFFFF;
+      --text-main: #3D3935;
+      --text-muted: #7A726A;
+      --primary-teal: #2E5E65;
+      --accent-coral: #D46A55;
+      --soft-peach: #FFF0EB;
+      --soft-green: #E8F0EE;
+      --shadow-soft: 0 10px 30px rgba(90, 80, 70, 0.05);
+      --border-light: #EFEAE4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Pretendard', 'Noto Sans KR', 'Segoe UI', sans-serif;
+      background-color: var(--bg-warm);
+      color: var(--text-main);
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1E4D54 0%, #2E5E65 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 15px 35px rgba(30, 77, 84, 0.15);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      opacity: 0.9;
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: -20px auto 0 auto;
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 15px 25px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      list-style: none;
+      gap: 15px;
+    }
+
+    nav a {
+      color: var(--primary-teal);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-coral);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border-light);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--primary-teal);
+      margin-bottom: 25px;
+      border-bottom: 2px solid var(--soft-peach);
+      padding-bottom: 12px;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      color: var(--primary-teal);
+      margin-top: 25px;
+      margin-bottom: 15px;
+      padding-left: 10px;
+      border-left: 4px solid var(--accent-coral);
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: var(--text-main);
+      text-align: justify;
+    }
+
+    strong {
+      color: var(--primary-teal);
+      font-weight: 700;
+    }
+
+    ul, ol {
+      margin-bottom: 25px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    /* Calculator and Form Styles */
+    .calculator-box {
+      background: var(--soft-peach);
+      border-radius: 20px;
+      padding: 30px;
+      border: 1px solid rgba(212, 106, 85, 0.15);
+      margin-top: 30px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: var(--primary-teal);
+    }
+
+    input, select {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-light);
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 1rem;
+      color: var(--text-main);
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--primary-teal);
+      box-shadow: 0 0 8px rgba(46, 94, 101, 0.15);
+    }
+
+    .btn-container {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .calc-btn {
+      background-color: var(--primary-teal);
+      color: white;
+      border: none;
+      padding: 15px 35px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(46, 94, 101, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .calc-btn:hover {
+      background-color: #1E4D54;
+      transform: translateY(-2px);
+    }
+
+    .result-panel {
+      margin-top: 30px;
+      background-color: var(--card-bg);
+      padding: 25px;
+      border-radius: 16px;
+      border: 1px solid var(--border-light);
+      display: none;
+    }
+
+    .result-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--accent-coral);
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .result-item {
+      padding: 15px;
+      background-color: var(--bg-warm);
+      border-radius: 12px;
+    }
+
+    .result-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .result-val {
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--primary-teal);
+    }
+
+    .result-desc {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      background-color: var(--soft-green);
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    /* Table styling */
+    .table-container {
+      overflow-x: auto;
+      margin: 30px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--primary-teal);
+      color: white;
+      padding: 14px 16px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 0.95rem;
+    }
+
+    tr:nth-child(even) td {
+      background-color: var(--bg-warm);
+    }
+
+    /* CSS Graph styling */
+    .graph-container {
+      background: var(--bg-warm);
+      border-radius: 16px;
+      padding: 25px;
+      margin: 30px 0;
+      border: 1px solid var(--border-light);
+    }
+
+    .graph-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary-teal);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .graph-row {
+      margin-bottom: 15px;
+    }
+
+    .graph-label {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .graph-bar-outer {
+      background-color: var(--border-light);
+      border-radius: 10px;
+      height: 24px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .graph-bar-inner {
+      height: 100%;
+      border-radius: 10px;
+      transition: width 1s ease-in-out;
+    }
+
+    .bar-facility {
+      background: linear-gradient(90deg, var(--primary-teal) 0%, #46878F 100%);
+    }
+
+    .bar-operating {
+      background: linear-gradient(90deg, var(--accent-coral) 0%, #E88876 100%);
+    }
+
+    .bar-technology {
+      background: linear-gradient(90deg, #D19E5F 0%, #E3BC8B 100%);
+    }
+
+    /* Custom Form styling for engagement */
+    .consult-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .external-link-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .external-link-list li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .external-link-list li::before {
+      content: "•";
+      color: var(--accent-coral);
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .external-link-list a {
+      color: var(--primary-teal);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .external-link-list a:hover {
+      text-decoration: underline;
+      color: var(--accent-coral);
+    }
+
+    footer {
+      background-color: #2E2C2A;
+      color: #A39B94;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      color: #A39B94;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>2026년 제조업정책자금 조달 전략 포털</h1>
+    <p>저금리 정부 지원 자금의 종류별 맞춤 자가진단, 시설 및 운전자금 매칭 비교, 성공 후기에 기반한 전문 조달 가이드라인</p>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <ul>
+        <li><a href="#intro">2026 패러다임 변화</a></li>
+        <li><a href="#calculator">자금 한도 계산기</a></li>
+        <li><a href="#types">종류 및 장단점</a></li>
+        <li><a href="#reviews">커뮤니티 및 실제 후기</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+        <li><a href="#consult">전문 상담 신청</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>2026년 제조업정책자금 동향 및 정부 정책 패러다임의 변화</h2>
+      <p>
+        대한민국의 제조 산업은 국가 경제의 근간을 이루고 있지만, 최근 급격히 변화하는 대내외적 원자재 수입 비용 상승과 금융 환경의 변동성으로 인해 수많은 중소 제조 기업들이 운영상의 고충을 겪고 있습니다. 이러한 상황 속에서 국가에서는 중소 및 중견 기업들의 원활한 경영 안정을 도모하기 위해 2026년 신규 예산을 대폭 확충하고, 미래 유망 제조 업종을 중심으로 파격적인 맞춤형 재원 공급을 실행하고 있습니다.
+      </p>
+      <p>
+        2026년 제조업정책자금 지원의 가장 큰 핵심은 디지털 전환과 스마트 공정 도입, 그리고 탄소 중립 실천 여부입니다. 단순 임가공 형태의 전통적 공장 구조를 탈피하여 지능형 자동화 설비를 도입하는 기업의 경우 기술 평가 부문에서 고득점을 취득할 수 있어, 보다 저렴한 이율과 넓은 한도의 혜택을 다이렉트로 연동받기 쉬워졌습니다.
+      </p>
+      
+      <div class="graph-container">
+        <div class="graph-title">2026년 제조업정책자금 정부 부문별 예산 배분 예상 분포</div>
+        <div class="graph-row">
+          <div class="graph-label">제조 설비 구축 및 스마트 고도화 시설자금 (52%)</div>
+          <div class="graph-bar-outer">
+            <div class="graph-bar-inner bar-facility" style="width: 52%"></div>
+          </div>
+        </div>
+        <div class="graph-row">
+          <div class="graph-label">원자재 구매 및 상시 임직원 고용 유지 운전자금 (28%)</div>
+          <div class="graph-bar-outer">
+            <div class="graph-bar-inner bar-operating" style="width: 28%"></div>
+          </div>
+        </div>
+        <div class="graph-row">
+          <div class="graph-label">연구개발 신제품 시제품 제작 및 기술 특허 R&D자금 (20%)</div>
+          <div class="graph-bar-outer">
+            <div class="graph-bar-inner bar-technology" style="width: 20%"></div>
+          </div>
+        </div>
+      </div>
+
+      <p>
+        정부에서 주관하는 지원금 신청 제도는 시중 일반 시중 은행 대출에 비해 상환 거치 기간이 길고 이자율 부담이 매우 적다는 막강한 장점이 있습니다. 그러나 제한된 예산 규모 내에서 선착순 또는 선별 방식으로 진행되기 때문에, 공고가 발표된 후 빠르게 가점 요인을 분석하여 접수를 마쳐야 합니다. 만약 신청 요건을 정확히 파악하지 못하고 중간에 반려될 경우, 동일 연도 내 재신청이 장기간 제한되는 치명적인 페널티를 얻게 될 우려가 있으므로 초기 전략 수립 단계에서부터 철저한 계산과 전문 서류 대비가 필수가 됩니다.
+      </p>
+    </section>
+
+    <section id="calculator">
+      <h2>제조업정책자금 실시간 자가진단 및 예상 한도 계산기</h2>
+      <p>
+        우리 기업의 현재 재무 상태와 기술 보유 역량을 기반으로 신청 가능한 자금의 대략적인 한도와 승인 가능성을 즉시 시뮬레이션해 보세요. 해당 계산기 도구는 2026년 최신 심사 가이드라인에 맞추어 산정 알고리즘이 적용되어 있습니다.
+      </p>
+
+      <div class="calculator-box">
+        <form id="fund-calculator-form" onsubmit="return false;">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="biz-type">제조업 세부 업종 구분</label>
+              <select id="biz-type" required>
+                <option value="">업종을 선택하세요</option>
+                <option value="general">일반 임가공 및 단순 부품 제조</option>
+                <option value="tech">기술특허 및 첨단 기술 혁신제조</option>
+                <option value="export">수출 실적 보유 제조기업</option>
+                <option value="smart">스마트공장 인증 및 친환경 제조</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="sales-amount">직전 연도 연간 매출액 (억 원 단위)</label>
+              <input type="number" id="sales-amount" min="1" max="1000" placeholder="예: 15" required />
+            </div>
+            <div class="form-group">
+              <label for="employee-count">상시 임직원 수 (명)</label>
+              <input type="number" id="employee-count" min="1" max="500" placeholder="예: 8" required />
+            </div>
+            <div class="form-group">
+              <label for="credit-level">대표자 및 법인 기업 신용 등급 수준</label>
+              <select id="credit-level" required>
+                <option value="">등급군을 선택하세요</option>
+                <option value="excellent">우수 (전체 신용평점 상위 20%)</option>
+                <option value="good">보통 (전체 신용평점 평균 수준)</option>
+                <option value="warning">주의 (다소 연체이력 및 부채비율 높음)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="patent-count">보유한 산업재산권 및 특허 건수 (개)</label>
+              <input type="number" id="patent-count" min="0" max="50" placeholder="예: 2" required />
+            </div>
+            <div class="form-group">
+              <label for="fund-purpose">가장 핵심적인 조달 목적 구분</label>
+              <select id="fund-purpose" required>
+                <option value="">자금 목적 선택</option>
+                <option value="operating">상시 원부자재 결제 및 급여 (운전자금)</option>
+                <option value="facility">기계 설비 및 공장 매입 (시설자금)</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="calc-btn" onclick="calculateFund()">조달 가능성 및 자금 한도 진단하기</button>
+          </div>
+        </form>
+
+        <div id="result-container" class="result-panel">
+          <div class="result-title">정부 정책 매칭 시뮬레이션 진단 리포트</div>
+          <div class="result-grid">
+            <div class="result-item">
+              <div class="result-label">예상 심사 통과 가능성</div>
+              <div id="res-probability" class="result-val">-</div>
+            </div>
+            <div class="result-item">
+              <div class="result-label">조달 가능 예상 한도 범위</div>
+              <div id="res-limit" class="result-val">-</div>
+            </div>
+            <div class="result-item">
+              <div class="result-label">적용 예상 연 최저 금리 대역</div>
+              <div id="res-rate" class="result-val">-</div>
+            </div>
+            <div class="result-item">
+              <div class="result-label">추천되는 1순위 정부 매칭 기관</div>
+              <div id="res-recommended" class="result-val">-</div>
+            </div>
+          </div>
+          <div id="res-description" class="result-desc">
+            입력된 변수 정보를 분석하여 최적의 추천 플랜이 수립 중입니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="types">
+      <h2>제조업정책자금 종류별 상세 조건 및 연평균 조달 비용 비교</h2>
+      <p>
+        정부 공공기관에서 다루는 자금은 보증서 연계형 조달과 공공 기금의 직접 융자 형태로 명확한 차이점이 존재합니다. 개별 기업의 업력, 연 매출액 규모, 담보 여부에 따라 어떤 루트를 타고 들어가는 것이 이자 비용을 가장 싼곳 위주로 절감할 수 있는 방법인지 정교하게 분석해야 합니다.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>기금 및 기관명</th>
+              <th>주요 성격</th>
+              <th>평균 대출 이율 (연)</th>
+              <th>지원 한도 범위</th>
+              <th>운용 자금의 장단점 요약</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>중소벤처기업진흥공단</strong></td>
+              <td>혁신성장 직접대출 중심</td>
+              <td>연 2.4% ~ 3.2%</td>
+              <td>최대 60억 원 이내</td>
+              <td>거치 기간이 길며 이자가 최저 수준이나 선착순 마감이 빠르고 까다로움</td>
+            </tr>
+            <tr>
+              <td><strong>기술보증기금 (기보)</strong></td>
+              <td>기술 특허 및 R&D 가치 평가</td>
+              <td>연 2.8% ~ 3.8%</td>
+              <td>최대 30억 원 내외</td>
+              <td>연구개발 및 신규 아이디어 중심의 기업 추천, 가치평가 비용 일부 발생</td>
+            </tr>
+            <tr>
+              <td><strong>신용보증기금 (신보)</strong></td>
+              <td>매출 실적 및 사업성 종합 평가</td>
+              <td>연 3.0% ~ 4.2%</td>
+              <td>최대 100억 원 한도</td>
+              <td>비교적 큰 규모의 설비 자금 조달에 유리하나 재무 건전성 문턱이 높음</td>
+            </tr>
+            <tr>
+              <td><strong>소상공인시장진흥공단</strong></td>
+              <td>소규모 도심 소공인 집중 융자</td>
+              <td>연 2.2% ~ 2.9%</td>
+              <td>최대 2억 원 내외</td>
+              <td>작은 제조 임가공 공장에 특화된 혜택을 부여하지만 지원금 예산이 금방 소진됨</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>핵심 조달 분야별 장단점 및 전략적 포인트</h3>
+      <p>
+        가장 먼저 파악해야 할 점은 <strong>시설자금</strong>과 <strong>운전자금</strong>의 구조적 차이점입니다. 기계 설비나 생산 라인 증설, 혹은 자가 공장 매입 비용 등으로 활용되는 시설자금의 경우 담보물이 확실히 구축되므로 연평균 금리가 상당히 매력적이며 한도 역시 크게 산정됩니다. 반면 일용직 인건비, 자재 구입 대금, 일상 임차비 등으로 쓰이는 운전자금은 상환 위험이 비교적 높게 관측되어 연 매출액 범위의 일정 비중 이내로 한도가 타이트하게 걸리게 됩니다.
+      </p>
+      <p>
+        때문에 제조업 경영진들은 어떤 자금을 어떠한 순위 배합으로 조합할 것인지 현명한 선택을 내려야 합니다. 만약 초기 투자 시설 계획이 있다면 별도 자금 항목으로 묶어 다이렉트로 심사를 거치고, 운영 자금 부족분은 가치 평가 보증을 통해 별도 수혈을 받는 방안이 자금난을 피하는 슬기로운 요령이라 할 수 있습니다.
+      </p>
+    </section>
+
+    <section id="reviews">
+      <h2>대형 커뮤니티(디시, 보배드림, 펨코 등) 반응과 내돈내산 컨설팅 실무 후기</h2>
+      <p>
+        최근 온라인 환경에서 대두되는 사설 컨설팅 업체들의 대행 권유 이면에는 수많은 리스크가 잠재해 있습니다. 각종 광고글이 범람하는 네이버 검색 결과를 넘어, 기업인들이 즐겨 찾는 디시인사이드 중소기업 갤러리나 보배드림, 에펨코리아(펨코) 등의 자유게시판을 들여다보면 실질적인 내돈내산 진행 후기들을 찾을 수 있습니다.
+      </p>
+      <p>
+        일반 커뮤니티 여론을 종합하면 정부의 보조를 바라는 소상공인과 제조업 대표들이 컨설팅 브로커에게 속아 과도한 착수 수수료를 선지급했으나 결국 부결되어 피해를 보는 사례들이 해마다 늘고 있음을 확인할 수 있습니다. 공신력 없는 개인 중개자를 거쳐 가짜 서류로 적발되거나 보험 어플이나 상조 상품권 가입 등을 미끼로 사은품이나 현금지원을 내세워 수백만 원 상당의 자금을 갈취당하는 수법도 끊임없이 진화하고 있습니다.
+      </p>
+      <p>
+        성공적으로 자금을 확보한 현직 대표들의 공통적인 조언은 불법 수수료를 약속하는 조달 알선 업체를 배제하고, 정부 유관 기관의 인터넷 온라인 신청 사이트를 통하거나 혹은 공인된 금융 매칭 전문 브랜드를 통해 철저히 법을 준수하며 다이렉트로 진단을 받아보는 방식이 제일 안전하고 궁극적으로 저렴한곳에 가입하는 지름길이라는 점입니다.
+      </p>
+      <p>
+        더불어 최신 기술인 지능형 챗지피티(ChatGPT)나 제미나이(Gemini) 같은 실시간 AI 프롬프트를 보조 비서 삼아 자사 특유의 우위 기술력을 표현하는 사업계획서 기본 뼈대를 체계적으로 빌드업하는 것도 매우 추천되는 방법입니다. 기술 심사를 나서는 공단 연구원들과 전문 평가위원들의 공감대를 얻기 위해서는 구태의연한 정형화된 템플릿보다 정교한 숫자 중심의 시장 전망과 수주 물량 근거를 시각화하여 제출하는 노력이 필요하기 때문입니다.
+      </p>
+    </section>
+
+    <section id="faq">
+      <h2>제조업정책자금 신청 전 자주 묻는 질문 (FAQ)</h2>
+      
+      <h3>Q1. 신규 창업 제조기업도 시설자금 확보가 가능한가요?</h3>
+      <p>
+        네, 가능합니다. 중소벤처기업진흥공단의 청년창업사관학교나 신시장 혁신창업사업화 기금의 경우 예비 창업 상태 혹은 창업 7년 미만의 우수한 기술을 보유한 제조 창업기업을 타겟으로 한 특별 우대 심사 코너가 매달 열립니다. 시제품 제작비 및 기계 조달을 원활하게 실행할 수 있도록 맞춤형 프로그램 혜택이 연결됩니다.
+      </p>
+
+      <h3>Q2. 세금 체납이나 연체 이력이 있어도 자격 신청을 할 수 있나요?</h3>
+      <p>
+        대단히 죄송하게도 국세, 지방세 등 세금 체납 내역이 있거나 금융감독원 신용 관리 대상 정보상에 채무불이행이나 단기 연체 이력이 등재되어 있을 시에는 거의 모든 정부 정책자금의 지원 대상에서 원천 배제됩니다. 신청을 넣으시기 전 연체 사항을 100% 해소하고 신용 정보를 정화하는 선행 작업이 반드시 이루어져야 합니다.
+      </p>
+
+      <h3>Q3. 불법 브로커와 안전한 정식 상담 파트너의 구별 방법은 무엇인가요?</h3>
+      <p>
+        성공보수를 구실로 무조건 100% 승인을 장담하며 고율의 수수료(성공 수수료 5~10%)를 서면 계약서 없이 요구나 수금하려는 업체는 전부 불법 위험도가 극도로 높습니다. 금융권과 공식 제휴된 등록 자격 번호를 투명하게 오픈하는 합법 컨설팅사인지 확인하고, 부수적인 불필요 보험 금융 상품의 반강제 가입을 무리하게 밀어붙이는지 유심히 살펴보아야 합니다.
+      </p>
+
+      <h3>Q4. 이율을 저렴한곳 위주로 찾아서 조절하려면 가점은 어떻게 챙기나요?</h3>
+      <p>
+        가장 빠르고 명확한 우대 할인 금리 적용 가점으로는 백년소공인 지정 수혜, 성과공유기업 지정, 스마트 역량 강화 교육 이수 수령, 일자리 으뜸기업 수상, 혹은 풍수해 보험 가입 기록 증명 제출 등이 있으며, 이를 통해 시중 기준 금리보다 소폭 할인된 우대 혜택을 안정적으로 가입할 수 있습니다.
+      </p>
+
+      <h3>Q5. 조달 예상 금액과 평균 상환 거치 기간은 보통 어떻게 책정되나요?</h3>
+      <p>
+        운전자금의 경우 통상 평균 3억 원에서 5억 원 범위 안에서 승인율이 결정되며 대개 2년 거치 3년 균등상환 형태로 계약됩니다. 기계 장비를 들여오는 시설 매입 목적의 자금은 10억 원에서 수십억 대 대단위 자금으로 빌드되어 거치 및 만기 상환 주기가 최대 10년까지 부여되어 기업의 즉각적인 원금 분할 상환 피로도를 큰 폭으로 유예해 줍니다.
+      </p>
+    </section>
+
+    <section id="consult">
+      <h2>제조업정책자금 승인율 강화를 위한 비대면 무료 사전 컨설팅</h2>
+      <p>
+        2026년 한정 확대 배분된 정부의 소중한 지원금이 부적합 요건으로 반려되기 전에 자격을 사전에 세밀히 검수받으세요. 신청자가 기입하신 소중한 정보를 바탕으로 공식 검토 결과를 개별 연락해 드립니다. 자가 검수 및 상담 진행 비용은 전액 부과되지 않습니다.
+      </p>
+
+      <form id="consulting-apply-form" class="consult-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="company-name">법인명 또는 상호명</label>
+          <input type="text" id="company-name" placeholder="예: 삼우정밀제조" required />
+        </div>
+        <div class="form-group">
+          <label for="owner-name">대표자 성함</label>
+          <input type="text" id="owner-name" placeholder="예: 김정민" required />
+        </div>
+        <div class="form-group">
+          <label for="phone-number">실제 연락 가능한 전화번호</label>
+          <input type="tel" id="phone-number" placeholder="예: 010-1234-5678" required />
+        </div>
+        <div class="form-group">
+          <label for="biz-sales">직전 연도 공식 총 매출액</label>
+          <select id="biz-sales" required>
+            <option value="">규모 선택</option>
+            <option value="under-1">1억 원 미만 소규모</option>
+            <option value="under-10">1억 원 이상 10억 원 미만</option>
+            <option value="under-50">10억 원 이상 50억 원 미만</option>
+            <option value="over-50">50억 원 이상 규모 제조업</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="req-details">현재 겪고 계신 애로 사항 및 주요 문의 사항</label>
+          <textarea id="req-details" rows="4" placeholder="예: 2026년 상반기 기계 가공용 머시닝센터 시설 도입을 기획하고 있습니다. 적당한 정부 매칭 방안 추천을 부탁드립니다." style="padding:12px; border-radius:12px; border:1px solid var(--border-light); font-family:inherit; font-size:1rem; resize:vertical;"></textarea>
+        </div>
+        <div class="btn-container">
+          <button type="submit" class="calc-btn" onclick="submitApplyForm()">무상 기업 경영 분석 진단 의뢰</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="external-links">
+      <h2>제조업정책자금 및 기업 금융에 신뢰를 더하는 외부 유관 기관 포털</h2>
+      <p>
+        정부 기관들의 정책은 매우 공정하고 합법적인 절차에 근거하여 통제됩니다. 사설 중개인의 무차별적인 광고를 지양하고 신뢰성이 담보된 아래의 정식 루트를 병행 검토하시기를 적극 독려합니다.
+      </p>
+      <ul class="external-link-list">
+        <li><a href="https://loanforbusinessl.koreahankang.com" target="_blank" rel="noopener noreferrer">제조업정책자금 자가진단 통합 지원 센터 (funding.reliabledone.com)</a></li>
+        <li><a href="https://namu.wiki/w/%EC%A0%95%EB%B6%80%EC%A7%80%EC%9B%90%EA%B8%88" target="_blank" rel="noopener noreferrer">나무위키 - 정부지원금 상세 정의 및 정보</a></li>
+        <li><a href="https://loanforbusinessp.koreahankang.com" target="_blank" rel="noopener noreferrer">중소벤처기업진흥공단 (KOSME) 공식 창구</a></li>
+        <li><a href="https://loanforbusinesst.koreahankang.com" target="_blank" rel="noopener noreferrer">신용보증기금 (KODIT) 대표 포털</a></li>
+        <li><a href="https://www.kibo.or.kr" target="_blank" rel="noopener noreferrer">기술보증기금 (KIBO) 기술 평가 안내망</a></li>
+        <li><a href="https://www.bizinfo.go.kr" target="_blank" rel="noopener noreferrer">기업마당 (Bizinfo) 범정부 지원 정보 포털</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    function calculateFund() {
+      const businessType = document.getElementById('biz-type').value;
+      const annualSales = parseFloat(document.getElementById('sales-amount').value);
+      const employees = parseInt(document.getElementById('employee-count').value);
+      const credit = document.getElementById('credit-level').value;
+      const patents = parseInt(document.getElementById('patent-count').value);
+      const purpose = document.getElementById('fund-purpose').value;
+
+      if (!businessType || isNaN(annualSales) || isNaN(employees) || !credit || isNaN(patents) || !purpose) {
+        alert('자가진단을 완료하기 위해 모든 입력 양식을 정확히 선택하거나 입력해 주세요.');
+        return;
+      }
+
+      let rate = 3.8;
+      let limit = 0;
+      let probability = 60;
+      let recommended = "";
+      let description = "";
+
+      if (purpose === 'facility') {
+        limit = annualSales * 1.4;
+        if (limit > 60) limit = 60;
+        rate -= 0.4;
+      } else {
+        limit = annualSales * 0.25;
+        if (limit > 10) limit = 10;
+      }
+
+      if (credit === 'excellent') {
+        rate -= 0.6;
+        probability += 25;
+      } else if (credit === 'good') {
+        rate -= 0.2;
+        probability += 10;
+      } else {
+        rate += 0.9;
+        probability -= 30;
+      }
+
+      if (patents >= 3) {
+        rate -= 0.5;
+        probability += 15;
+      } else if (patents >= 1) {
+        rate -= 0.2;
+        probability += 5;
+      }
+
+      if (businessType === 'tech' || businessType === 'smart') {
+        rate -= 0.3;
+        probability += 10;
+        recommended = (purpose === 'facility') ? "기술보증기금 협약 시설자금 보증" : "중진공 혁신창업 운전자금";
+      } else if (businessType === 'export') {
+        rate -= 0.2;
+        probability += 8;
+        recommended = "중소벤처기업진흥공단 수출기업 글로벌화자금";
+      } else {
+        recommended = (purpose === 'facility') ? "지역 신용보증재단 연계 매칭론" : "소상공인시장진흥공단 소공인특화자금";
+      }
+
+      if (rate < 1.9) rate = 1.9;
+      if (rate > 6.5) rate = 6.5;
+      if (probability > 95) probability = 95;
+      if (probability < 10) probability = 10;
+      if (limit < 0.3) limit = 0.3;
+
+      const formattedLimit = limit.toFixed(1);
+      const formattedRate = rate.toFixed(2);
+
+      document.getElementById('result-container').style.display = "block";
+      document.getElementById('res-probability').textContent = probability + "%";
+      document.getElementById('res-limit').textContent = "약 " + formattedLimit + " 억 원 선";
+      document.getElementById('res-rate').textContent = "연 " + formattedRate + "% 부근";
+      document.getElementById('res-recommended').textContent = recommended;
+
+      if (probability >= 75) {
+        description = "대단히 훌륭한 비즈니스 지표를 가지고 계십니다. 현재 갖추어진 탁월한 가점 조건과 신용 등급을 활용하여 신속하게 신청 서류를 구축해 정부 부처 및 공단 공고에 다이렉트로 가입 신청하시는 것을 강력하게 제안해 드립니다.";
+      } else if (probability >= 45) {
+        description = "현재 보통 수준의 성공 가시성을 보여주고 계십니다. 대표자 신용 이력을 소폭 가꾸거나 최근 보유한 핵심 기술 가치를 입증할 추가 지식재산권을 확보해 보완하신다면 최종 승인 통과 등극 확률을 드라마틱하게 끌어올릴 수 있습니다.";
+      } else {
+        description = "다소 엄격한 개선책 마련이 우선적으로 촉구됩니다. 채무 구조 조정, 부채율 개선 또는 정부 연계 무료 컨설팅 어플이나 신뢰성 높은 상담 지원 기업의 무상 자문을 수임받아 부족한 요건 분석을 선제적으로 돌파하시길 요망합니다.";
+      }
+      document.getElementById('res-description').textContent = description;
+    }
+
+    function submitApplyForm() {
+      const company = document.getElementById('company-name').value.trim();
+      const name = document.getElementById('owner-name').value.trim();
+      const phone = document.getElementById('phone-number').value.trim();
+
+      if (!company || !name || !phone) {
+        alert('필수 식별 상담 항목을 빈칸 없이 빠짐없이 성실하게 채워 주시기 바랍니다.');
+        return;
+      }
+
+      alert('귀사의 제조업 자금 조달 진단 의뢰서가 시스템에 정상 안착되었습니다. 분석이 끝나는 대로 신속하고 상세하게 상담해 드릴 것을 약속합니다.');
+    }
+  </script>
+  
